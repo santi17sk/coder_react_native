@@ -1,6 +1,7 @@
 import React from 'react';
 import { Modal, View, Text, Button } from 'react-native';
 import { styles } from './styles';
+import { colors } from '../../constants/theme/colors';
 
 const CustomModal = ({ isModalVisible, selectedTask, onHandleCancel, onHandleDelete }) => {
   return (
@@ -14,7 +15,7 @@ const CustomModal = ({ isModalVisible, selectedTask, onHandleCancel, onHandleDel
         <View style={styles.modalButtonContainer}>
           <Button 
             title='Cancel'
-            color='#626893'
+            color={colors.primary}
             onPress={onHandleCancel}
           />
           <Button
